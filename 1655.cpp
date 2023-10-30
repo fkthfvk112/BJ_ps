@@ -1,13 +1,14 @@
 #include <iostream>
+#include <queue>
 
 using namespace std;
 
-int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+priority_queue<int> leftQueue;
+priority_queue<int, vector<int>, greater<int>> rightQueue;
 
-     int n;
+
+int main(void) {
+    int n;
     cin >> n;
     for (int i = 0; i < n; i++) {
         int val;
@@ -29,8 +30,9 @@ int main(){
             rightSize = rightQueue.size();
         }
 
-        cout << leftQueue.top() << "\n";
+        cout <<leftQueue.top() << endl;
+
     }
 
-return 0;
+    return 0;
 }

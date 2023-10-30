@@ -23,8 +23,8 @@ void permu(int cnt, int n, int r){
             visit[i] = false;
         }
     }
-
 }
+
 int main(){
     int arr[] = {4, 5, 3};
     permu(0, 3, 3);//cnt r
